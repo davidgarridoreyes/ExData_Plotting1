@@ -11,8 +11,7 @@ plot4 <- function(){
 	## Convert times:
 	datetime <- strptime(paste(data$Date, data$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 	
 
-	## Plot and save to png file (480x480). This step will be done differently from the other scripts, where it was firstly present in a popup screen and saved later.
-	## In this case we will directly save it to a png file since, in other case, the fonts will keep the regular size as if only one graph was in the image.
+	## Plot and save to png file (480x480).
 	png("plot4.png", height = 480, width = 480)
 	par(mfrow = c(2,2))
 	## First plot:

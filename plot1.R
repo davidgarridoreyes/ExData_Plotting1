@@ -9,9 +9,9 @@ plot1 <- function(){
 	rm(names)
 	
 	## Plot the histogram and save it to a png file (480x480):
+	png("plot1.png", height = 480, width = 480)	
 	hist(data$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
-	dev.copy(png, file = "plot1.png", height = 480, width = 480)
-
+	
 	## Close the device:
 	dev.off()
 }
